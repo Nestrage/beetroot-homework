@@ -4,25 +4,19 @@
     box-sizing: border-box; /*содержимое блока не будет расширять страничку*/
 }
 
-body{
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    line-height: 20px;
-}
-
 .header {
     top: 0px;
     left: 0px;
     right: 0px; 
     position: absolute;
-    padding: 50px 74px 0;
+    padding: 86px 74px 0;
     /*outline: 1px solid aqua;*/
 }
 
 .header__logo{
     float: left;
-    width: 133px;
-    height: 78px;
+    width: 135px;
+    height: 81px;
     margin-top: -30px;
 }
 
@@ -33,7 +27,8 @@ body{
 }
 
 .header__nav{
-    float: right;
+    float: left;
+    margin-left: 80px;
 }
 
 a{ /*анимация подчеркивания*/
@@ -51,16 +46,8 @@ a:active{
 }
 
 .nav__link {
-    color: black;
+    color: white;
     margin-left: 20px;
-}
-
-.nav__link:hover {
-    text-decoration-color: currentColor;
-}
-
-.nav__link:active{
-    color: red;
 }
 
 main {
@@ -78,14 +65,15 @@ main {
     bottom: 0;
     left: 0;
     color: white;
-    padding: 112px 74px 74px;
+    padding: 74px 74px 274px;
 }
 
 .home-card__heading {
     line-height: 54px;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 35px;
+    text-transform: uppercase;
 }
 
 .home-card__body{
@@ -93,7 +81,7 @@ main {
 }
 
 .home-card__body__table{
-    width: 330px;
+    width: 400px;
 }
 
 .home-card__body__table tr td:first-child{
@@ -103,8 +91,6 @@ main {
 .home-card__body__table tr td:nth-child(2){
     font-weight: 600;
 }
-
-
 
 .home-card__controls__link {
     color: white;
@@ -117,7 +103,7 @@ main {
     font-size: 12px;
     align-items: center;
     text-transform: uppercase;
-    background-color: #EA7B15;
+    background-color: #63274E;
     width: 235px;
     height: 50px;
     outline: none;
@@ -127,9 +113,9 @@ main {
 }
 
 .home-card__controls__button:hover{
-    background-color: #e99a50;
+    background-color: #632f50;
 }
 
 .home-card__controls__button:active{
-    background-color: #e9b585;
+    background-color: #80436a;
 }
