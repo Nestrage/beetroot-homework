@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.icon{
+    width: 65px;
+    height: 65px;
+    border: 1px solid #2a69a6;
+    background-color: #2a69a6;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color .3;
+    color: white;
+}
+
+.icon > .material-icons{
+    font-size: 32px;
+    line-height: 63px;
+    margin-right: -1px;
+}
+
+.icon:hover{
+    background-color: white;
+    color: #2a69a6;
+}
+
+/*.icon.tablet{
+    background-image: url("../img/Tablet.png");
+}*/
+
+/*.icon.settings{
+    background-image: url("../img/Settings.png");
+}*/
+
+/*.icon.dashboard{
+    background-image: url("../img/Dashboard.png");
+}*/
+
+.title{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+
+.content{
+    opacity: 50%;
+}
+
+@media (max-width: 1250px){
+    
+}
