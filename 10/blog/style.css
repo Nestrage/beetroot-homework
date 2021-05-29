@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #b07cf7;
+}
+
+.header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header__p {
+    margin-top: 45px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    min-width: 500px;
+    margin: 45px 0 45px 0;
+}
+
+.card_1, .card_2, .card_3 {
+    width: 370px;
+    height: 315px;
+    margin-left: 20px;
+    position: relative;
+    box-shadow: 0px 0px 9px 0px black;
+    transition: all 0.4s;
+}
+
+.card_1:hover,
+.card_2:hover,
+.card_3:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.card_1 {
+    background: url(img/img1.jpg);
+}
+
+.card_2 {
+    background: url(img/img2.jpg);
+}
+
+.card_3 {
+    background: url(img/img3.jpg);
+}
+
+.card_1__date, .card_2__date, .card_3__date {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.card1__text, .card2__text, .card3__text {
+    font-size: 20px;
+    font-weight: 600;
+    bottom: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+.card1__text-p2, .card2__text-p2, .card3__text-p2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    opacity: .7;
+}
+
+.btn {
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
+    display: block;
+    background: #f72b3b;
+    margin: 50px auto;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0px 1px 4px 0px black;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    color: #f72b3b;
+    background-color: orchid;
+    cursor: pointer;
+    transform: translate(5px, 5px);
+    border-radius: 8px;
+}
+
+.btn:active {
+    background-color: rgb(68, 19, 66);
+}
+
+@media  screen and (max-width: 1200px) {
+    .container {flex-direction: column;
+        align-items: center;
+        }
+    .card_1, .card_2, .card_3{
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,116 @@
+.blog{
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #b07cf7;
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.blog__header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.blog__header__p {
+    margin-top: 45px;
+}
+
+.blog__container {
+    display: flex;
+    justify-content: center;
+    min-width: 500px;
+    margin: 45px 0 45px 0;
+}
+
+.blog__card_1, .blog__card_2, .blog__card_3 {
+    width: 370px;
+    height: 315px;
+    margin-left: 20px;
+    position: relative;
+    box-shadow: 0px 0px 9px 0px black;
+    transition: all 0.4s;
+}
+
+.blog__card_1:hover,
+.blog__card_2:hover,
+.blog__card_3:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.blog__card_1 {
+    background: url(../img/img1.jpg);
+}
+
+.blog__card_2 {
+    background: url(../img/img2.jpg);
+}
+
+.blog__card_3 {
+    background: url(../img/img3.jpg);
+}
+
+.blog__card_1__date, .blog__card_2__date, .blog__card_3__date {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.blog__card1__text, .blog__card2__text, .blog__card3__text {
+    font-size: 20px;
+    font-weight: 600;
+    bottom: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+.blog__card1__text-p2, .blog__card2__text-p2, .blog__card3__text-p2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    opacity: .7;
+}
+
+.blog__btn {
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
+    display: block;
+    background: #f72b3b;
+    margin: 50px auto 0 auto;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0px 1px 4px 0px black;
+    transition: all 0.4s;
+}
+
+.blog__btn:hover {
+    color: #f72b3b;
+    background-color: orchid;
+    cursor: pointer;
+    transform: translate(5px, 5px);
+    border-radius: 8px;
+}
+
+.blog__btn:active {
+    background-color: rgb(68, 19, 66);
+}
+
+@media  screen and (max-width: 1200px) {
+    .blog__container {flex-direction: column;
+        align-items: center;
+        }
+    .blog__card_1, .blog__card_2, .blog__card_3{
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            
+            <form class="form" action="#" method="GET"> 
+                <label class="input-block">
+                    <span class="input-block__name">Имя</span>
+                    <input class="input-block__input" required type="text" name="name">
+                </label>
+
+                <label class="input-block">
+                    <span class="input-block__name">Возраст</span>
+                    <input class="input-block__input" required type="text" name="age">
+                </label>
+
+                <label class="input-block">
+                    <span class="input-block__name">Город</span>
+                    <select class="input-block__input" required name="city">
+                        <option>Киев</option>
+                        <option>Львов</option>
+                        <option>Одесса</option>
+                        <option>Харьков</option>
+                    </select>
+                </label>
+                <button class="btn" type="submit">Отправить</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
