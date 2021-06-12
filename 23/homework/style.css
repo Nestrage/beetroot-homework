@@ -1,0 +1,21 @@
+body {
+  background-image: url(1_fSp3LOg8N8YN-eiIOFJ9pA.jpeg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+button {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  color: #f1dd3c;
+  font-size: 24px;
+  line-height: 32px;
+  background-color: #323230;
+  transition: all 0.5s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
